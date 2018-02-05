@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <script>
+        function testAjax(){
+            $.ajax({
+				type: "POST",
+				url: '/bsoi-sg/services/security/initLogin',
+				success: function(response) {
+					console.log("ajax call success...");
+				},
+				error: function(xhr, textStatus, errorThrown){
+					console.log('ajax call failed...');
+				}
+			});
+        }
+    </script>
+</head>
+
+<body>
+    <p>Hello World</p>
+    <hr />
+    <button onclick="testAjax()">testAjax</button>
+    <script src="jquery-1.9.1.js"></script>
+</body>
+
+</html>

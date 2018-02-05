@@ -1,0 +1,13 @@
+{
+  "name": "sample-http-proxy-server",
+  "version": "1.0.0",
+  "description": "a server which can proxy the http request",
+  "author": "Li Shuxue",
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "^1.16.2"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
